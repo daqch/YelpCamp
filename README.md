@@ -1,7 +1,7 @@
 # YelpCamp
 Website build following udemy's The Web-Developer Bootcamp course
 ### What's this about?
-This is a yelpcamp image sharing website with its proper user authentication. It served to me for learning the following technologies.
+This is a yelpcamp image sharing website with its proper user authentication. It served to me for learning the following technologies:
 
 *Javascript
 *HTML
