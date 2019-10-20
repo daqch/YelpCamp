@@ -22,15 +22,15 @@ var campgrounds = [
 ];
 
 app.use(bodyParser.urlencoded({ extended: true }));
-app.get("/", function(req, res) {
+app.get("/", function (req, res) {
   res.render("index.ejs");
 });
 
-app.get("/campgrounds", function(req, res) {
+app.get("/campgrounds", function (req, res) {
   res.render("campgrounds", { campgrounds: campgrounds });
 });
 
-app.post("/campgrounds", function(req, res) {
+app.post("/campgrounds", function (req, res) {
   var name = req.body.name;
   var image = req.body.image;
   var newCampground = {
@@ -42,10 +42,10 @@ app.post("/campgrounds", function(req, res) {
   res.redirect("/campgrounds");
 });
 
-app.get("/campgrounds/new", function(req, res) {
+app.get("/campgrounds/new", function (req, res) {
   res.render("new.ejs");
 });
 
-app.listen(3000, "localhost", function() {
+app.listen(3000, "localhost", function () {
   console.log("connected");
 });
